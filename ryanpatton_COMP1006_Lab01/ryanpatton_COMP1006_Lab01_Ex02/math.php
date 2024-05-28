@@ -35,15 +35,13 @@
 
         //adds each number in an array together and divides by the number of numbers
         function average($arr){
-            $count = 0;
             $total = 0;
 
             foreach ($arr as $grade) {
                 $total = $total + $grade;
-                $count++;
             }
 
-            $total = $total / $count;
+            $total = $total / count($arr);
 
             echo "the class average is {$total} <br>";
         }
