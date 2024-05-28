@@ -20,7 +20,19 @@
             }
         }
 
-        echo"{$statesArray[0]}";
+        foreach($states as $state){
+            $pattern = "/\bM/";
+            if(preg_match($pattern, $state)){
+                $statesArray[1] = $state;
+                break;
+            } else {
+                continue;
+            }
+        }
+
+        foreach($statesArray as $newState) {
+            echo"{$newState}<br>";
+        }
     ?>
 </body>
 </html>
