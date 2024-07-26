@@ -1,13 +1,17 @@
 <?php
 class Product {
     private int $id;
-
-    public function __construct(
-        private Category $category,
-        private string $code,
-        private string $name,
-        private float $price,
-    ) { }
+    private ?Category $category;
+    private string $code;
+    private string $name;
+    private float $price;
+    public function __construct() {
+        $this->id = 0;
+        $this->category = null;
+        $this->code = "";
+        $this->name = "";
+        $this->price = 0.0;
+    }
 
     public function getCategory() {
         return $this->category;
