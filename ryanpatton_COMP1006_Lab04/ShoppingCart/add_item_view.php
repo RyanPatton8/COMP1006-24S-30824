@@ -42,5 +42,6 @@
         <p><a href=".?action=show_cart">View Cart</a></p>
 
     </main>
+    <p>Session ID: <?php echo(session_id());?></p>
 </body>
 </html>
