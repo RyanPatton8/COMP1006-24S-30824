@@ -59,6 +59,7 @@ switch($action) {
             include('../errors/error.php');
         } else {
             $current_category = CategoryDB::getCategory($category_id);
+            
             $product = new Product();
             $product->setCategory($current_category);
             $product->setCode($code);

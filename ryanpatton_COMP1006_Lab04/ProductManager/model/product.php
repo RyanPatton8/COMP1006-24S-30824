@@ -5,6 +5,7 @@ class Product {
     private string $code;
     private string $name;
     private float $price;
+    
     public function __construct() {
         $this->id = 0;
         $this->category = null;
